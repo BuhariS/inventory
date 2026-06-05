@@ -16,6 +16,8 @@ def add_item(request):
     return render(request, "add_item.html")
 
 
+def about(request):
+    return render(request, "about.html")
 
 
 class ProductListView(ListView):
