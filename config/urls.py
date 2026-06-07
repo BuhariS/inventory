@@ -19,12 +19,16 @@ from django.contrib import admin
 from django.urls import path, include
 
 from inventory import views
+from django.contrib.auth import views as auth_views
 
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("inventory/", include("inventory.urls")),
-    path('accounts/', include('django.contrib.auth.urls')),
+    
+    path("accounts/login/", auth_views.LoginView.as_view(), name="login"),
     path("about/", views.about, name="about"),
+    path("pricing/", views.pricing, name="pricing"),
+    path("registration/", views.registration, name="registration"),
 ]

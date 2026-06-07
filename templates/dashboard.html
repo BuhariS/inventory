@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+<section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
+    <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-bold">
+            Dashboard
+        </h1>
+        <p class="mt-2 text-indigo-100">
+            Welcome back! Manage your inventory efficiently.
+        </p>
+    </div>
+</section>
+
+<!-- Stats Cards -->
+<section class="py-10 bg-gray-100">
+    <div class="container mx-auto px-6">
+
+        <div class="grid md:grid-cols-4 gap-6">
+
+            <!-- Products -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-gray-500">Products</h3>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">
+                    120
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-gray-500">Categories</h3>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">
+                    8
+                </p>
+            </div>
+
+            <!-- Suppliers -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-gray-500">Suppliers</h3>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">
+                    15
+                </p>
+            </div>
+
+            <!-- Low Stock -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-gray-500">Low Stock</h3>
+                <p class="text-3xl font-bold text-red-500 mt-2">
+                    5
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Quick Actions -->
+<section class="py-10">
+    <div class="container mx-auto px-6">
+
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">
+            Quick Actions
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <a href="#"
+               class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+                <h3 class="text-lg font-bold text-indigo-600">
+                    Add Product
+                </h3>
+                <p class="text-gray-500 mt-2">
+                    Create new inventory items
+                </p>
+            </a>
+
+            <a href="#"
+               class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+                <h3 class="text-lg font-bold text-indigo-600">
+                    View Inventory
+                </h3>
+                <p class="text-gray-500 mt-2">
+                    See all products in stock
+                </p>
+            </a>
+
+            <a href="#"
+               class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+                <h3 class="text-lg font-bold text-indigo-600">
+                    Reports
+                </h3>
+                <p class="text-gray-500 mt-2">
+                    Analyze inventory performance
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Recent Activity -->
+<section class="py-10 bg-gray-100">
+    <div class="container mx-auto px-6">
+
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">
+            Recent Activity
+        </h2>
+
+        <div class="bg-white rounded-xl shadow p-6">
+
+            <ul class="space-y-4 text-gray-600">
+
+                <li>✔ Product "Laptop" added to inventory</li>
+                <li>✔ Stock updated for "Mouse"</li>
+                <li>✔ New supplier "Tech Supplies Ltd" added</li>
+                <li>✔ Low stock alert for "Keyboard"</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
